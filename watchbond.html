@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchbond - Your Movie Night Just Got Better!</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #181818; /* Темный фон */
+            color: #f5f5f5; /* Светлый текст */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        /* Основной контейнер */
+        header, section, footer {
+            width: 90%;
+            max-width: 850px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #2A2A2A; /* Темно-серый фон для блоков */
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #7C4DFF; /* Лиловый */
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        /* Кнопка с эффектом */
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #7C4DFF;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin: 10px 0;
+        }
+
+        .button:hover {
+            background-color: #5F3BB7; /* Темнее лилового */
+            transform: translateY(-2px); /* Легкое поднятие */
+        }
+
+        .features {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .features li {
+            font-size: 1.2em;
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 15px;
+            color: #E0E0E0;
+        }
+
+        .features li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #7C4DFF;
+        }
+
+        /* Контейнер с горизонтальной прокруткой */
+        .scroll-container {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding: 10px;
+            -webkit-overflow-scrolling: touch;
+            max-width: 100%;
+        }
+
+        .scroll-container img {
+            height: 350px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .scroll-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Скрытие скроллбаров */
+        .scroll-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scroll-container {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #A0A0A0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Watchbond</h1>
+    <p>Movies are better when shared! Discover the perfect film, create rooms, and enjoy unforgettable movie nights with friends and family. Your perfect movie journey starts here.</p>
+    <p><strong>Welcome to Watchbond</strong>, the ultimate movie companion app that brings people together through personalized movie recommendations, ensuring everyone finds the perfect film for a fun and interactive movie night.</p>
+    <a href="https://apps.apple.com/us/app/watchbond/id6737237113" class="button">Get it on the App Store</a>
+</header>
+
+<section>
+    <h2>What Makes Watchbond Unique?</h2>
+    <ul class="features">
+        <li><strong>Smart Movie Matching:</strong> Connect with loved ones based on mutual preferences.</li>
+        <li><strong>Personalized Suggestions:</strong> Receive tailored recommendations that match your group’s taste.</li>
+        <li><strong>Group Polling:</strong> Vote on movies and make collective decisions seamlessly.</li>
+        <li><strong>Interactive and Fun:</strong> A smooth and engaging experience for movie lovers of all ages.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Flexible Subscription Plans</h2>
+    <p>Choose the plan that fits your needs and enjoy an enhanced movie-watching experience:</p>
+    <ul class="features">
+        <li><strong>Weekly Subscription:</strong> Just $0.99/week</li>
+        <li><strong>Monthly Subscription:</strong> Only $1.99/month</li>
+        <li><strong>Yearly Subscription:</strong> Save big with $12.99/year</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Gallery</h2>
+    <p>Check out how Watchbond brings movies to life! Swipe through the gallery below:</p>
+    <div class="scroll-container">
+        <img src="images/400x800bb.png" alt="Watchbond Interface 1">
+        <img src="images/400x800bb 2.png" alt="Watchbond Interface 2">
+        <img src="images/400x800bb 3.png" alt="Watchbond Interface 3">
+        <img src="images/400x800bb 4.png" alt="Watchbond Interface 4">
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Watchbond. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
